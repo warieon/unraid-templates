@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>signal-cli</Name>
+  <Repository>bbernhard/signal-cli-rest-api:0.64</Repository>
+  <Registry>https://hub.docker.com/r/bbernhard/signal-cli-rest-api</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/bbernhard/signal-cli-rest-api</Project>
+  <Overview>CLI wrapper around the Signal API to expose an API to allow sending notifications / messages to Signal users (or yourself) from applications.&#xD;
+&#xD;
+This template uses version 0.64 of the application - please check the open issues on the github before upgrading to 0.65 or newer (https://github.com/bbernhard/signal-cli-rest-api/issues/319)&#xD;
+&#xD;
+Please note - Unraid CA template creator is not affiliated with the Signal-CLI-REST-API project.</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://user-images.githubusercontent.com/83089404/115912451-a3b7f800-a46f-11eb-8c48-017d4218a7e5.png</Icon>
+  <ExtraParams/>
+  <Config Name="appdata" Target="/home/.local/share/signal-cli" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/signalAPI</Config>
+  <Config Name="Port" Target="8080" Default="9922" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9922</Config>
+  <Config Name="MODE" Target="MODE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">native</Config>
+  <Config Name="SIGNAL_CLI_UID" Target="SIGNAL_CLI_UID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+</Container>
