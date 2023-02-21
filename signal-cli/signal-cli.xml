@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/bbernhard/signal-cli-rest-api</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/135376-support-signal-api-template/</Support>
   <Project>https://github.com/bbernhard/signal-cli-rest-api</Project>
   <Overview>CLI wrapper around the Signal API to expose an API to allow sending notifications / messages to Signal users (or yourself) from applications.&#xD;
 &#xD;
